@@ -12,6 +12,12 @@ public class AL11445_yoon {
             String P = sc.next();
             String Q = sc.next();
             if (Q.equals(P + "a")) {
+
+                // Q == P 이거 안댐
+                // Q.equals(P);
+                // aaa 의 다음문자
+                // aab x aaaa -> 이거임
+
                 YN = 'N';
             }
             System.out.println("#" + t + " " + YN);
