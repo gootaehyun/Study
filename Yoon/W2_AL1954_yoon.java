@@ -2,7 +2,7 @@ package Yoon;
 
 import java.util.Scanner;
 
-public class AL1954_yoon {
+public class W2_AL1954_yoon {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T;

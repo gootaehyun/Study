@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class swea1859 {
+public class W0_swea1859 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
