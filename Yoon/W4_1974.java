@@ -21,9 +21,8 @@ public class W4_1974 {
 
             // 가로체크
             for (int i = 0; i < 9; i++) {
-                checks = new boolean[9];
+                checks = new boolean[9]; //1~9
                 for (int j = 0; j < 9; j++) {
-
                     if (!checks[map[i][j] - 1]) {
                         checks[map[i][j] - 1] = true;
                     } else {

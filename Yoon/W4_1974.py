@@ -6,6 +6,8 @@ for t in range(1, T+1) :
         arr = list(map(int,input().split()))
         board.append(arr)
     
+    
+
     checks = [False]*9
     ans = 1
     flag = False
