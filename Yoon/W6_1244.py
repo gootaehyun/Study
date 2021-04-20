@@ -1,15 +1,11 @@
-T = int(input())
+T = 10
 for t in range(1, T+1):
-    N = int(input())
-    pre = [1]
-    print("#{0}".format(t))
-    for i in range(1, N+1):
-        now = []
-        for j in range(i):
-            if j == 0 or j == i-1:
-                now.append(1)
-            else:
-                now.append(pre[j-1]+pre[j])
-            print(now[j], end=" ")
-        print()
-        pre = now
+    n = int(input())
+    ls = list(map(int,input().split()))
+    print(ls)
+    for i in range(n):
+        ls[ls.index(max(ls))] -=1
+        ls[ls.index(min(ls))] +=1
+    ans = max(ls) - min(ls)
+    print("#{0} {1}".format(t,ans))
+        
