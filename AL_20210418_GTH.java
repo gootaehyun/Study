@@ -8,9 +8,56 @@ public class AL_20210418_GTH {
 		int T;
 		T=sc.nextInt();
 
-        for(int test_case = 1; test_case <= T; test_case++)
+		for(int test_case = 1; test_case <= T; test_case++)
 		{
-            
+			int number = 0;
+            int N = 0;
+            number = sc.nextInt();
+            N = sc.nextInt();
+            int length = (int)(Math.log10(number)+1);
+            int[] p = new int[length];
+            for(int i = 0; i < length ; i++){
+            	p[i] = number%10;
+                number = number/10;
+                //System.out.println("p : "+p[i]);
+            }
+            int i = 0;
+            int C = 0;
+            while(C<N){
+                int max = 0;
+                int tmp = 0;
+                int chk1 = 0;
+                int chk2 = 0;
+            	for(int j = length-1-i; j >= 0; j--){
+                	if(p[j] > max){
+                        max = p[j];
+                        chk1 = j;
+                    }else if(p[j] == max && j > 0){
+                    	chk2 = j;
+                        //System.out.println("chk2 : "+chk2);
+                    }
+                }
+                
+                System.out.println("max : "+max);
+                if(max != p[length-1-i]){
+                	tmp = p[length-1-i];
+                    p[length-1-i] = max;
+                    p[chk1] = tmp;
+                }else{
+                	tmp = p[0];
+                    p[0] = p[1];
+                    p[1] = tmp;
+                }
+                i++;
+                C++;
+                if(i>=length)
+                    i = i-length;
+            }
+            System.out.print("#"+test_case+" ");
+            for(int a = length-1; a >= 0; a--){
+                    System.out.print(p[a]);
+            }
+            System.out.println();
 		}
     }
 
