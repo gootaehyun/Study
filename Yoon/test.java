@@ -2,19 +2,15 @@ package Yoon;
 
 public class test {
     public static void main(String[] args) {
-        int[] ls = { 1, 2, 3, 4 };
-        int p1 = 0;
-        int p2 = 1;
-        while (p2 < ls.length) {
-            System.out.println(p1 + " " + p2);
-            p2++;
-            if (p2 == ls.length) {
-                p1++;
-                p2 = p1 + 1;
+        int[][] map = { { 1, 0, 1, 1, 0, 0 }, { 0, 0, 1, 1, 0, 0 }, { 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 1, 1, 1, 1 }, { 0, 0, 1, 1, 1, 1 } };
+
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                System.out.print(map[i][j]+ " ");
             }
-            if (p2 == ls.length && p1 == ls.length) {
-                break;
-            }
+            System.out.println();
         }
+
     }
 }
