@@ -15,15 +15,15 @@ public class W6_1244 {
             m = sc.nextInt();
 
             ls = new int[(int) Math.log10(type) + 1];
+            
             for (int i = ls.length - 1; i >= 0; i--) {
                 int k = type % 10;
-                type /= 10;
+                type /= 10; //12
                 ls[i] = k;
             }
             max = 0;
             dfs(0, 0);
             System.out.println("#" + t + " " + max);
-
         }
     }
 
