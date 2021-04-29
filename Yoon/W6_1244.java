@@ -1,6 +1,4 @@
 package Yoon;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class W6_1244 {
