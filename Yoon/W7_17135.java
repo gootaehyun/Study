@@ -63,7 +63,7 @@ public class W7_17135 {
     static void simulate() {
         int en = 3;
         killCount = 0;
-        for (int m = 0; m < N; m++) {
+        for (int m = 0; m < N; m++) { // 총m회 실행
             int[][] enemy = new int[en][2]; // 세명의 적의 위치
             int ar = 0;
             for (int i = 0; i < dfsCom.length; i++) {
@@ -81,11 +81,7 @@ public class W7_17135 {
                     killCount++;
                 }
             }
-            boolean chk = enemyCome();
-            if (!chk) {// 만약 false가 return되면 중지.
-                
-                break;
-            }
+            enemyCome();
         }
         if (max < killCount) {
             max = killCount;
@@ -133,10 +129,10 @@ public class W7_17135 {
         return posi;
     }
 
-    static boolean enemyCome() {
+    static void enemyCome() { //적이 내려오는 함수
         for (int j = 0; j < M; j++) {
             if (map[N - 1][j] == 1) {
-                return false;
+                map[N-1][j] = 0;
             }
         }
         for (int i = N - 2; i >= 0; i--) {
@@ -147,6 +143,5 @@ public class W7_17135 {
                 }
             }
         }
-        return true;
     }
 }
