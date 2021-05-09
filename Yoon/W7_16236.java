@@ -68,17 +68,15 @@ public class W7_16236 {
             if (count == chk) { // 잡아먹지 못했다면
                 break;
             }
-
         }
         System.out.println(count);
-
     }
 
     static class ij {
         int i;
         int j;
         int d;
-
+        
         ij(int i, int j, int d) {
             this.i = i;
             this.j = j;
