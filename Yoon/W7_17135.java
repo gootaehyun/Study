@@ -36,11 +36,10 @@ public class W7_17135 {
             }
         }
         dfs(0, 3, 0);// 3명의 궁수를 조합으로 배치
-
         System.out.println(max);
     }
 
-    static void dfs(int now, int depth, int i) {
+    static void dfs(int now, int depth, int i) { //5C3
         if (now == depth) {
             for (int n = 0; n < N; n++) {
                 for (int m = 0; m < M; m++) {
