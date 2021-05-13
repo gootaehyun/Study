@@ -1,5 +1,3 @@
-package Yoon;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -30,6 +28,7 @@ public class W8_tomato {
                 }
             }
         }
+
         int[][] dir = { { 0, -1 }, { -1, 0 }, { 0, 1 }, { 1, 0 } };
         while (!qi.isEmpty()) {
             int i = qi.poll();

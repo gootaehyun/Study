@@ -1,18 +1,23 @@
-n = int(input())
-
-1 1 1
-1 1 2
-1 1 3
-1 1 4
-1 1 5
-1 1 6
-..
-6 6 6
+4 5
 
 
-def ref(n):
-    for j in range(6):
-        print(j, end=" ")
-    for i in range(n):
-        ref(i):
+Stack [[0,1],[2,0],[1,1]] -> DFS 할때씀
+Queue [[0,0]] -> BFS
+
+
+0 0 1 0 0 
+0 0 1 0 0 
+1 1 1 0 1 
+0 1 1 1 1 
+
+enque
+deque
+
+
+ls.Pop() => pop기능 수행
+Ls.pop(0) => 
+
+search
+
+visited[]
 

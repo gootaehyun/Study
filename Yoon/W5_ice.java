@@ -1,5 +1,3 @@
-package Yoon;
-
 import java.util.Scanner;
 
 public class W5_ice {
