@@ -32,9 +32,8 @@ input{
     text-align: center;
     
     font-size: 40px;
-
+    
 }
-
 .navButton{
     width: 200px;
     height: 100%;
@@ -43,6 +42,7 @@ input{
 
 .navButton:hover{
     color: red;
+    cursor: pointer;
 }
 
 .otherDiv{
