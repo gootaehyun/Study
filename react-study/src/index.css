@@ -1,0 +1,61 @@
+table td{
+    width: 200px;
+    height: 100px;
+
+    background-color: gray;
+
+    font-size: 100px;
+
+    text-align: center;
+    border: solid 0px red;
+}
+table{
+    border-spacing: 0px;
+}
+
+td:hover{
+     background-color: red;
+     cursor:pointer;
+}
+
+input{
+    width: 600px;
+}
+
+.Navbar{
+    margin: auto 0;
+    width: 860px;
+    height: 40px;
+    background-color: skyblue;
+
+    padding: 20px;
+    text-align: center;
+    
+    font-size: 40px;
+
+}
+
+.navButton{
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.navButton:hover{
+    color: red;
+}
+
+.otherDiv{
+    margin-left: 20px;
+}
+
+.cal-con{
+    width: 700px;
+}
+.cal-cell{
+    width: 100px;
+    float: left;
+}
+.today{
+    color: red;
+}
