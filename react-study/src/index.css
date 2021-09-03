@@ -65,3 +65,11 @@ input{
     width: 700px;
     text-align: center;
 }
+.Dday{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: none;
+
+}
