@@ -16,6 +16,9 @@ const Table = () =>{
     function calculate(){
     //    setNum(eval(num))
     }
+    const typeNum = e =>{
+        setNum(e.target.value);
+    }
 
     /*재미없는 이론시간
     웹 특징) 정적.. static.. =>이유 한페이지를 멀리서(서버) 다운받아서 니 컴퓨터(클라이언트)에 보여준다.
@@ -33,24 +36,26 @@ const Table = () =>{
         //html부분에서 javascript변수를 가지고오고싶다..  {_} 
 
         <div>
-            <input value={num}></input>
+            <input value={num} onChange={typeNum}></input>
             <table>
+                <tbody>
                 <tr>
-                    {[1,2,3].map((i)=><td onClick={()=> changeNum(i)}>{i}</td>)}
+                    {[1,2,3].map((i)=><td key={i} onClick={()=> changeNum(i)}>{i}</td>)}
                 </tr>
                 <tr>
-                    {[4,5,6].map((i)=><td onClick={()=> changeNum(i)}>{i}</td>)}
+                    {[4,5,6].map((i)=><td key={i} onClick={()=> changeNum(i)}>{i}</td>)}
                 </tr>
                 <tr>
-                    {[7,8,9].map((i)=><td onClick={()=> changeNum(i)}>{i}</td>)}
+                    {[7,8,9].map((i)=><td key={i} onClick={()=> changeNum(i)}>{i}</td>)}
                 </tr>
                 <tr>
-                    {["+","-"].map((i)=><td onClick={()=> changeNum(i)}>{i}</td>)}
+                    {["+","-"].map((i)=><td key={i} onClick={()=> changeNum(i)}>{i}</td>)}
                     <td onClick={calculate}>=</td>
                 </tr>
                 <tr>
                     <td onClick={eraseNum}>C</td>
                 </tr>
+                </tbody>
             </table>
         </div>
     );
